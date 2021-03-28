@@ -1,0 +1,204 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+       <meta charset="utf-8"> 
+       <title>Canteen App Homepage</title> 
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        
+         <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="simple-grid.css" type="text/css">
+        
+        <link href="orderEasy.css" rel="stylesheet" type="text/css">
+        
+    </head>
+    <body>
+        
+        <div class="container">
+            <div id="app">
+                <!--nav bar-->
+                 <nav >
+                    <div class="nav-wrapper container">
+                      <a href="#" >Order Easy Logo</a>
+                      <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li class="logged-in" style="display: none;">
+                            <a href="#" class="modal-trigger" data-toggle="modal" data-target="#modalAccount">Account</a>
+                          </li>
+                          <li class="logged-in" style="display: none;" >
+                            <a href="#"  id="logout">Logout</a>
+                          </li>
+                          <li class="logged-out" >
+                            <a href="#" class=" modal-trigger"  data-toggle="modal" data-target="#modalLogin">Login</a>
+                          </li>
+                          <li class="logged-out" >
+                            <a href="#"  >Sign up</a>
+                          </li>
+
+                      </ul>
+                    </div>
+                  </nav>
+               
+
+                 <!--hero image-->
+                <div class="hero">
+                    <div class="row">
+                      <h1>Skip The Line</h1>
+                     </div><!--end hero img row-->
+                </div><!--end hero image div-->
+
+                <!--main body-->
+
+                <div class="links">
+                    <div class="row">
+                        <div class="col-6">
+                              <button class="topUpLinkBtn">Top Up</button>
+                              <p>your friends, childs or your own account!</p>
+                         </div><!--end top up btn col-->
+                        <div class="col-6">
+                              <button class="orderLinkBtn">Order</button>
+                              <p>delicious food waiting for you at the St Hilda's Canteen!</p>
+                        </div><!--end order btn col-->
+                     </div><!--end links row-->
+
+                </div><!--ends section with links-->
+
+                <div class="infographic">
+                   <div class="row">
+                        <h3>Preorder and pay for for your canteen food online so you can enjoy your break times with friends!</h3>
+                       
+                   </div><!--ends row for inforgraphic text-->
+                    
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="phone.png" alt="iphone">
+                        </div>
+                        
+                        <div class="col-4">
+                            <img src="shopping-bag.png" alt="shoppingBag">
+                        </div>
+                        
+                        <div class="col-4">
+                            <img src="cutlery.png" alt="cutlery">
+                        </div>
+                    
+                    </div><!--ends row for infographic images-->
+                    <div class="row">
+                        <div class="col-4">
+                            <h3>YOU ORDER</h3>
+                        
+                        </div>
+                        
+                        <div class="col-4">
+                            <h3>WE PREPARE</h3>
+                        </div>
+                        
+                        <div class="col-4">
+                            <h3>YOU ENJOY</h3>
+                        </div>
+                    
+                    </div>
+                </div><!--ends infographic section-->
+                
+                <!--Sign In Pop Up Modal-->
+           <div class="modal" id="modalLogin">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Customer Log In</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          <label>School email<input type="email" id="emailSignInInput" placeholder="janedoe@shcs.school.nz"  onfocus="this.value=''" required> </label>
+                            
+                            <a href="#" class="textLink">Forgot Your Password?</a>
+
+                          <label>Password <input type="password" id="passwordSignInInput"  pattern="[A-Za-z]{2,50}" onfocus="this.value=''" required> </label>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn " >Log In</button>
+                        </div>
+
+                      </div>
+                    </div>
+          </div>
+                
+                  <div id="modal-account" class="modal">
+                    <div class="modal-content center-align">
+                      <h4>Account details</h4><br />
+                      <div class="account-details"></div>
+                    </div>
+                  </div>
+        
+    
+
+
+        
+        
+        <!--footer-->
+             </div>
+        </div>
+        
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+        <script>
+              // Your web app's Firebase configuration
+              var config = {
+                apiKey: "AIzaSyAcflrquhFXe2GQtYo5Pq4Y0UNY4TLA41Y",
+                authDomain: "ordereasy-canteen---firebase.firebaseapp.com",
+                databaseURL: "https://ordereasy-canteen---firebase.firebaseio.com",
+                projectId: "ordereasy-canteen---firebase",
+                storageBucket: "ordereasy-canteen---firebase.appspot.com",
+                messagingSenderId: "838064180879",
+                appId: "1:838064180879:web:c613bf1fd338d91a81aafa",
+                measurementId: "G-S9EL5PK2ZM"
+              };
+              // Initialize Firebase
+              firebase.initializeApp(config);
+              firebase.analytics();
+                //make auth and firestore references
+                const auth = firebase.auth();
+                const db = firebase.firestore();
+
+    
+        </script>
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+        
+        <script src="orderEasy.js"></script>
+        
+        <!-- for firebase -->
+        <script src="scripts/auth-fb.js"></script>
+        
+        <script src="scripts/index-fb.js"></script>
+        
+    </body>
+</html>

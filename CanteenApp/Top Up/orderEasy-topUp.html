@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8"> 
+       <title>Canteen App Top Up</title> 
+        
+                
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        
+         <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        
+        <link href="orderEasy.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!--nav bar-->
+        <div class="container">
+            <div id="app">
+                <div class="nav-bar">
+                    <div class="row">
+                         <img src="crestRibbon.jpg" class="logo" alt="St Hilda's crest">
+
+
+                            <nav> 
+                              <ul>
+                                <li><a href="#">Log in</a></li>
+                                <li><a href="#">Sign Up</a></li>
+                              </ul> 
+                         </nav>
+                    </div><!--end nav row-->
+
+                </div><!--ends nav bar-->
+                <div id="initialSearchInputs">
+                         <div class="row">
+                            <div class="col-6">
+                                   <label>First Name <input type="text" id="firstNameInput" placeholder="Jane" pattern="[A-Za-z]{2,50}" onfocus="this.value=''" required> </label><br>
+
+                            </div><!--ends first name column-->
+
+                            <div class="col-6">
+                                  <label>Last Name <input type="text" id="lastNameInput" placeholder="Doe" pattern="[A-Za-z]{2,50}" onfocus="this.value=''" required> </label><br>
+
+                            </div><!--ends last name column-->
+                        </div><!--ends names row-->
+                        <div class="row">
+                            <div class="col-12">
+                                <label>Email <input type="email" id="emailInput" placeholder="janedoe@shcs.school.nz" pattern=" [a-z0-9.-]+@[a-z0-9.-]+.[a-z]+.[a-z]" onfocus="this.value=''" required></label><br>
+                            </div>
+                         <p class="error-messages" id="initalTopUpInputs"></p>
+                        </div><!--ends email row-->
+
+                        <div class="row">
+                           <div class="col-4">
+                             <button id="searchTopUpBtn" >Search</button>
+                            </div>
+
+                        </div><!--ends search btn row-->
+                   </div><!--ends initial search inputs div-->
+                    <div id="hiddenTopUp" class="hidden">
+                            <div id="sliderDiv">
+                                <div class="row">
+                                    <div class="col-3">
+                                       <p>Top Up Amount</p>
+                                    </div>
+
+                                </div><!--end slider row 1-->
+                                <div class="row">
+                                    <div class="col-1">
+                                    </div>
+                                    <div class="col-11">
+                                      <input type="range" min="5" max="30">
+                                    </div>
+
+                                </div><!--ends slider row 2-->
+                                <div class="row">
+                                    <div class="col-4">
+                                       <p id="selectedTopUpAmount">Selected amount: </p>
+                                    </div>
+                                </div><!--ends slider row 3-->
+
+
+                            </div>
+                        
+                           <div id="poliDiv">
+                               <div class="row">
+                                   <div class="col-12">
+                                       
+                                      <p>Poli</p>
+                                   
+                                   </div><!--end col with poli box-->
+                               
+                               </div><!--end row with poli box-->
+                        
+                           </div><!--end div with poli box-->
+                        
+                         <div class="row">
+                             <div class="col-4">
+                               <button id="processTopUpBtn">Process Top Up</button>
+                             </div><!--ends process top up btn row-->
+                        
+                        </div><!--ends process top up btn col-->
+                     </div><!--ends all initially hidden elements div-->
+                
+                <footer>
+                <p id="footerText">2020 St Hilda's Canteen<br> Developed by order easy</p>
+                <a href="#"> <span class="fa fa-facebook"></span></a>
+
+                <a href="#"> <span class="fa fa-twitter"></span></a>
+
+                <a href="#"> <span class="fa fa-instagram"></span></a>
+
+                </footer>
+                   
+               
+                
+            </div><!--ends app div-->
+        </div><!--ends container-->
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+        
+        <script src="orderEasy.js"></script>
+    </body>
+</html>

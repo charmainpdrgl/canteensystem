@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+body{
+    font-family: 'EB Garamond, serif';
+    margin:auto;
+    
+}
+
+nav{
+    background-color: #38ACD9;
+    width:100%;
+    height:auto;
+}
+
+ ul{
+    list-style-type: none;
+    text-decoration: none;
+     margin:0;
+     overflow: hidden;
+    
+}
+
+li{
+    float:right;
+    
+     
+}
+
+ li > a{
+    color:white;
+    padding: 10%;
+    
+     display: block;
+}
+
+.logo{
+    width: 8%;
+    height:auto;
+}
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+#secondNav{
+    background-color: white;
+    border-bottom: 2px solid #38ACD9;
+    color: #38ACD9 ;
+}
+
+
+
+
+ 

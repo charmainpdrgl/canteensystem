@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8"> 
+       <title>Canteen App Sign Up</title> 
+                
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        
+         <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        
+        <link href="orderEasy.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+           <!--nav bar-->
+        <div class="container">
+            <div id="app">
+                <div class="nav-bar">
+                    <div class="row">
+                         <img src="crestRibbon.jpg" class="logo" alt="St Hilda's crest">
+
+
+                            <nav> 
+                              <ul>
+                                <li><a href="#">Log in</a></li>
+                                <li><a href="#">Sign Up</a></li>
+                              </ul> 
+                         </nav>
+                    </div><!--end nav row-->
+
+                </div><!--ends nav bar-->
+                
+                <div class="row">
+                   <h2>Create your Canteen Account</h2>
+                </div><!--end title row-->
+                
+                
+                <!--inputs-->
+                <div id="signUpInputs">
+                    <div class="row">
+                        <div class="col-6">
+                               <label>First Name <input type="text" id="firstNameInput" placeholder="Jane" pattern="[A-Za-z]{2,50}" onfocus="this.value=''" required> </label><br>
+                               <p id="firstNameError" class="error-messages"></p><br>
+                        </div><!--ends first name column-->
+                        
+                        <div class="col-6">
+                              <label>Last Name <input type="text" id="lastNameInput" placeholder="Doe" pattern="[A-Za-z]{2,50}" onfocus="this.value=''" required> </label><br>
+                               <p id="lastNameError" class="error-messages"></p><br>
+                        </div><!--ends last name column-->
+                    </div><!--ends names row-->
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <label>Email <input type="email" id="emailInput" placeholder="janedoe@shcs.school.nz" pattern=" [a-z0-9.-]+@[a-z0-9.-]+.[a-z]+.[a-z]" onfocus="this.value=''" required></label><br>
+                            <p id="emailError" class="error-messages"></p><br>
+                        
+                        </div><!--ends email column-->
+                    
+                    </div><!--ends email row-->
+                    
+                    <div class="row">
+                        <div class="col-6">
+                            <label>Student Id <input type="number" id="studentIDInput" placeholder="17085" pattern="^\d{5}$" onfocus="this.value=''" required></label><br>
+                            <p id="studentIDError" class="error-messages"></p><br>
+                        
+                        </div><!--ends student id column-->
+                    </div><!--ends student id row-->
+                    
+                    <div class="row">
+                        <div class="col-6">
+                            <label>Password <input type="password" id="passwordInput"  pattern="[A-Za-z]{8,50}" onfocus="this.value=''" required> </label><br>
+                            <p id="passwordError" class="error-messages"></p><br>
+                        </div><!--ends password column-->
+                        
+                        <div class="col-6">
+                            <label>Confirm Password<input type="password" id="confirmPasswordInput" pattern="[A-Za-z]{8,50}" onfocus="this.value=''" required></label><br>
+                            <p id="passwordError" class="error-messages"></p><br>
+                        </div><!--ends confirm password column-->
+                    </div><!--ends passwords row-->
+               </div> <!--inputs div-->
+                
+                <div class="row">
+                    <div class="col-4">
+                       <button id="createAccountBtn">Create Account</button>
+                    </div><!--ends create account btn column-->
+                
+                </div><!--ends create account btn row-->
+                
+                <!--footer-->
+                <div class="row">
+                    <div class="col-2">
+                    </div>
+                    
+                    <div class="col-2">
+                    </div>
+                    
+                    <div class="col-2">
+                    </div>
+                    
+                
+                </div><!-- top footer row-->
+                <div class="row">
+                    <div class="col-4">
+                    </div>
+                    
+                    <div class="col-1">
+                    </div>
+                    
+                    <div class="col-1">
+                    </div>
+                    
+                </div><!--bottom footer row-->
+                
+            </div><!--ends app div-->
+        </div><!--ends container-->
+        
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+        
+        <script src="orderEasy.js"></script>
+    </body>
+</html>
