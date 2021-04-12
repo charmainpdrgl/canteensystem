@@ -1,8 +1,16 @@
+.container {
+    text-align: center;
+}
+
+.hello {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 .grid-container-two {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 10px;
-  padding: 10px;
 }
 
 h1, h2, h3 {
@@ -37,4 +45,8 @@ h1, h2, h3 {
 .homeimages {
     width: 44px;
     height: 44px;
+}
+
+nav {
+    background-color: #38ACD9;
 }

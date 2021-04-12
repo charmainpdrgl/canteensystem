@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
+  <!-- <div id="app"> -->
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
      <Home msg="Include Nav Bar Here"/>
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>
