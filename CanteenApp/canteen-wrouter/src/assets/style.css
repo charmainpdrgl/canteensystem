@@ -1,0 +1,54 @@
+.container {
+    text-align: center;
+  }
+  
+  .hello {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  
+  .grid-container-two {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    color: #38acd9;
+    font-weight: bold;
+  }
+  
+  .grid-container-three {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .homebuttons {
+    border: 2px solid #38acd9;
+    background-color: white;
+    font-weight: bold;
+    color: #38acd9;
+    padding: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: medium;
+  }
+  
+  .homebuttons:hover {
+    background-color: #38acd9;
+    color: white;
+    transition: 0.8s;
+  }
+  
+  .homeimages {
+    width: 44px;
+    height: 44px;
+  }
+  
+  nav {
+    background-color: #38acd9;
+  }
