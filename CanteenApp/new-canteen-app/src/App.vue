@@ -1,4 +1,8 @@
 <template>
+  <!-- <div id="app"> -->
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+     <Home msg="Include Nav Bar Here"/>
+  <!-- </div> -->
   <q-layout view="lHh Lpr lFf">
     <q-header elevated class="glossy">
       <q-toolbar>
@@ -79,16 +83,17 @@
       <HelloWorld />
     </q-page-container>
   </q-layout>
+>>>>>>> main
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home.vue'
 
 export default {
   name: 'LayoutDefault',
 
   components: {
-    HelloWorld
+    Home
   },
 
   data () {
