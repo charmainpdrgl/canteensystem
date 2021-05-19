@@ -1,34 +1,42 @@
 <template>
-  <div class="q-pa-md">
-
-    <div class="row">
-      <div class="col">
-        .col
-      </div>
-      <div class="col">
-        .col
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 3
     </div>
-
-    <div class="row">
-      <div class="col">
-        .col
-      </div>
-      <div class="col">
-        .col
-      </div>
-      <div class="col">
-        .col
-      </div>
+    <div class="col-7 border border-dark title">
+      <h2>Create your canteen account</h2>
     </div>
+    <div class="col">
+      3 of 3
+    </div>
+   </div>
+     <div class="row form-panel">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-7 border border-dark">
+      <h2>Create your canteen account</h2>
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+   </div>
   </div>
 </template>
 
-<style lang="sass" scoped>
-.row > div
-  padding: 10px 15px
-  background: rgba(86,61,124,.15)
-  border: 1px solid rgba(86,61,124,.2)
-.row + .row
-  margin-top: 1rem
+<style scoped>
+body{
+    background: coral;
+}
+form{
+  box-sizing: border-box;
+  
+}
+.title{
+  padding: 20px
+}
+.form-panel{
+  margin-top:30px;
+}
 </style>
