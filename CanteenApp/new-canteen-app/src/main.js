@@ -1,9 +1,7 @@
-import Vue from 'vue'
-import App from './App.vue'
-import './quasar'
-
-Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import "../src/assets/bootstrap.css";
+createApp(App)
+  .use(router)
+  .mount("#app");

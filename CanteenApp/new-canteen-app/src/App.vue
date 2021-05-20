@@ -1,19 +1,12 @@
 <template>
-  <!-- <div id="app"> -->
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <Home msg="Include Nav Bar Here"/>
-  <!-- </div> -->
+  <router-view>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">Sign Up</router-link>
+      <router-link to="/orderform">Order Form</router-link>
+    </div>
+  </router-view>
 </template>
-
-<script>
-import Home from './components/Home.vue'
-export default {
-  name: 'App',
-  components: {
-    Home
-  }
-}
-</script>
 
 <style>
 #app {
