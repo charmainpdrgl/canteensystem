@@ -4,7 +4,7 @@
       <div class="col ">
       
       </div>
-      <div class="col-8 border border-dark title bg-white">
+      <div class="col-9 title bg-white">
         <h2>Create your canteen account</h2>
       </div>
       <div class="col">
@@ -15,7 +15,7 @@
       <div class="col">
       
       </div>
-      <div class="col-8 border border-dark text-left bg-white">
+      <div class="col-8 text-left bg-white">
         <form>
           <div class="container form-group">
             <div class="row">
@@ -136,6 +136,7 @@ form {
 }
 h2 {
   text-align: center;
+  font-family: sans-serif;
 }
 label {
   color: #34abd6;
@@ -151,4 +152,5 @@ input {
 .last-input{
   margin-bottom: 20px;
 }
+
 </style>

@@ -10,7 +10,7 @@
 body,html,#app{
   width: 100%;
   height: 100%;
-  background-color: #F0F1F0
+  background-color: #FFF
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
