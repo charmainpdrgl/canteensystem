@@ -1,67 +1,73 @@
 <template>
-  <div class="container">
-    <!-- <div class="rowcontainer">
-        <p>{{ msg }}</p>
-        <div class="dropdown">
-            <button class="dropbtn">SWEET</button>
-            <div class="dropdown-content">
-                <br>
-                <p>item</p>
-            </div>
-        </div>
-        <div class="grid-item dropdown">
-            <button class="dropbtn">SAVOURY</button>
-            <div class="dropdown-content">
-                <p>item</p>
-            </div>
-        </div>
-        <div class="grid-item dropdown">
-            <button class="dropbtn">DRINKS</button>
-            <div class="dropdown-content">
-                <p>item</p>
-            </div>
-        </div>
-        <div class="grid-item dropdown">
-            <button class="dropbtn">SNACKS</button>
-            <div class="dropdown-content">
-                <p>item</p>
-            </div>
-        </div>
-    </div> -->
-    <button class="accordion">Sweet</button>
-    <div class="panel">
-    <p>Lorem ipsum...</p>
+<div class="container vue">
+    <div v-for="(group,name) in groups" v-bind:key="name">
+        <a class="groups" @click="group.open = !group.open" v-text="name"></a>
+        <ul class="orderformlist" v-show="group.open">
+            <li class="fooditems" v-for="item in group.items" v-text="item" v-bind:key="item"></li>
+        </ul>
     </div>
-
-    <button class="accordion">Savoury</button>
-    <div class="panel">
-    <p>Lorem ipsum...</p>
-    </div>
-
-    <button class="accordion">Drinks</button>
-    <div class="panel">
-    <p>Lorem ipsum...</p>
-    </div>
-
-    <button class="accordion">Snacks</button>
-    <div class="panel">
-    <p>Lorem ipsum...</p>
-    </div>
-  </div> 
+</div>
 </template>
 
-<script scoped src="../assets/accordion.js">
+<script>
 export default {
-  name: 'OrderForm',
-  data() {
-      return {
-          text: `item`
-      }
-  }
+    name: 'OrderForm',
+    data() {
+        return {
+            groups : {
+                "SWEET": {
+                    "name": "SWEET",
+                    "open": false,
+                    "items": [
+                        "Choc Chip Muffin",
+                        "Chocolate Chip Cookie"
+                    ]
+                },
+                "SAVOURY": {
+                    "name": "SAVOURY",
+                    "open": false,
+                    "items": [
+                        "Sandwich (Chicken/Egg/Ham/Tuna)",
+                        "Wrap (Chicken/Egg/Ham/Tuna)",
+                        "Hot Dog",
+                        "Sausage Roll",
+                        "item 5",
+                        "item 6",
+                        "item 7"
+                    ]
+                },
+                "DRINKS": {
+                    "name": "DRINKS",
+                    "open": false,
+                    "items": [
+                        "Juice (Apple/Orange)",
+                        "item 2",
+                        "item 3",
+                        "item 4",
+                        "item 5"
+                    ]
+                },
+                "SNACKS": {
+                    "name": "SNACKS",
+                    "open": false,
+                    "items": [
+                        "item 1",
+                        "item 2",
+                        "item 3",
+                        "item 4",
+                        "item 5",
+                        "item 6",
+                        "item 7"
+                    ]
+                }
+            }
+        }
+    }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped src="../assets/styles.css">
-  /* @import "/assets/styles.css"; */
+
+<style scoped>
+/* @import "/assets/styles.css"; */
 </style>
