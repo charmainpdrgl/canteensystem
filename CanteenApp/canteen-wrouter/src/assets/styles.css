@@ -84,6 +84,12 @@ nav {
   font-weight: bold;
 }
 
+.groups:hover {
+  background-color: #38acd9;
+  color: white;
+  transition: 0.8s;
+}
+
 .fooditems {
   float:left;
   padding: 5%;
