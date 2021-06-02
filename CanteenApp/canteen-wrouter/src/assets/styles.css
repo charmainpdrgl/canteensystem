@@ -1,6 +1,12 @@
 .container {
-  text-align: center;
+    text-align: center;
 }
+
+.hello {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 
 .hello {
   padding-left: 20%;
@@ -8,13 +14,11 @@
   text-align: center;
 }
 
-
 .grid-container-two {
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 10px;
 }
-
 
 h1,
 h2,
