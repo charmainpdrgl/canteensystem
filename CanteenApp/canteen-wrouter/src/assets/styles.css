@@ -67,17 +67,6 @@ nav {
   font-size: medium;
 }
 
-.homebuttons:hover {
-  background-color: #38acd9;
-  color: white;
-  transition: 0.8s;
-}
-
-.homeimages {
-  width: 44px;
-  height: 44px;
-}
-
 .groups {
   display: block;
   cursor: pointer;

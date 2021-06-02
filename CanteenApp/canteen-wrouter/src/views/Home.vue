@@ -40,7 +40,6 @@
                 <h3>YOU ENJOY</h3>
             </div>
         </div>
-        <p>Include footer here</p>
     </div>
   </div>
 </template>
