@@ -4,7 +4,7 @@
       <div class="col ">
       
       </div>
-      <div class="col-8 border border-dark title bg-white">
+      <div class="col-8 title bg-white">
         <h2>Create your canteen account</h2>
       </div>
       <div class="col">
@@ -15,7 +15,7 @@
       <div class="col">
       
       </div>
-      <div class="col-8 border border-dark text-left bg-white">
+      <div class="col-8 text-left bg-white">
         <form>
           <div class="container form-group">
             <div class="row">
@@ -104,7 +104,6 @@
       <div class="col">
        
       </div>
-      <p>:(</p>
     </div>
      <div class="row">
       <div class="col">
