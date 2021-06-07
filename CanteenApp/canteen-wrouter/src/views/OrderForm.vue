@@ -1,14 +1,19 @@
 <template>
 <div class="container vue">
-    <form class="menu-form" @submit.prevent="handleSubmit">
-        <!-- <div v-for="(group,name) in groups" v-bind:key="name">
-        <a class="groups" @click="group.open = !group.open" v-text="name"></a>
-        <ul class="orderformlist" v-show="group.open">
-            <li class="fooditems" v-for="item in group.items" v-text="item" v-bind:key="item"></li>
+    <div>
+        <select class="menu-filter" v-model="selected">
+            <option disabled value="Filter">Filter</option>
+            <option>Vegetarian</option>
+            <option>Gluten - Free</option>
+            <option>Dairy - Free</option>
+            <option>All</option>
+        </select>
+        <ul>
+            <li v-for="item in filteredMenu" v-bind:key="item">{{ filter }} hello</li>
         </ul>
-        </div>
-        <br>
-        <br> -->
+    </div>
+    <form class="menu-form" @submit.prevent="handleSubmit">
+        <hr>
         <div v-for="(group,name) in groups" v-bind:key="name">
         <a class="groups" @click="group.open = !group.open" v-text="name"></a>
         <li class="orderformlist" v-show="group.open">
@@ -31,6 +36,17 @@ export default {
     name: 'OrderForm',
     data() {
         return {
+            filter : {
+                "Vegetarian": [
+                    "item1"
+                ],
+                "Gluten-free": [
+                    "item1"
+                ],
+                "Dair-free": [
+                    "item1"
+                ]
+            },
             groups : {
                 "SWEET": {
                     "name": "SWEET",
@@ -78,6 +94,21 @@ export default {
                     ]
                 }
             }
+        }
+    },
+    computed: {
+        filteredMenu: function() {
+            var vm = this;
+            var category = vm.selected;
+            if(category === "Vegetarian") {
+                return vm.filter.Vegetarian;
+            }
+            // if(category === "Gluten-free") {
+            //     return vm.filter.Gluten-free.items;
+            // }
+            // if(category === "Vegetarian") {
+            //     return vm.filter.Dairy-free.items;
+            // }
         }
     }
 }
